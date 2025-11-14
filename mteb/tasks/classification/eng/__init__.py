@@ -12,6 +12,7 @@ from .dbpedia_classification import DBpediaClassification, DBpediaClassification
 from .dtd_classification import DTDClassification
 from .emotion_classification import EmotionClassification, EmotionClassificationV2
 from .euro_sat_classification import EuroSATClassification
+from .fairness_bench_classification import HateXplainClassification
 from .fer2013_classification import FER2013Classification
 from .fgvc_aircraft_classification import FGVCAircraftClassification
 from .financial_phrasebank_classification import (
@@ -339,6 +340,7 @@ __all__ = [
     "HUMEEmotionClassification",
     "HUMEToxicConversationsClassification",
     "HUMETweetSentimentExtractionClassification",
+    "HateXplainClassification",
     "Imagenet1kClassification",
     "ImdbClassification",
     "ImdbClassificationV2",

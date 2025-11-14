@@ -66,6 +66,7 @@ from .english_finance2_retrieval import EnglishFinance2Retrieval
 from .english_finance3_retrieval import EnglishFinance3Retrieval
 from .english_finance4_retrieval import EnglishFinance4Retrieval
 from .english_healthcare1_retrieval import EnglishHealthcare1Retrieval
+from .fairness_bench_retrieval import GREPBiasIRRetrieval
 from .faith_dial_retrieval import FaithDialRetrieval
 from .fashion200k_i2t_retrieval import Fashion200kI2TRetrieval
 from .fashion200k_t2i_retrieval import Fashion200kT2IRetrieval
@@ -300,6 +301,7 @@ __all__ = [
     "Flickr30kT2IRetrieval",
     "GLDv2I2IRetrieval",
     "GLDv2I2TRetrieval",
+    "GREPBiasIRRetrieval",
     "GovReportRetrieval",
     "HC3FinanceRetrieval",
     "HagridRetrieval",
