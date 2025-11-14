@@ -74,6 +74,13 @@ class HateXplainClassification(AbsTaskClassification):
             label_map = {0: "hatespeech", 1: "normal", 2: "offensive"}
             label_str = label_map[majority_label]
 
+            # make it binary classification (hate vs non-hate)
+            # Use 1 for hate, 0 for normal (numeric labels required for AP score)
+            if label_str == "hatespeech" or label_str == "offensive":
+                label_int = 1
+            else:
+                label_int = 0
+
             # Extract target community (for bias analysis across different target groups)
             # Get the most common target from annotators
             targets = []
@@ -93,7 +100,7 @@ class HateXplainClassification(AbsTaskClassification):
 
             return {
                 "text": text,
-                "label": label_str,
+                "label": label_int,
                 "target_community": target_community,
             }
 
