@@ -31,7 +31,14 @@ class GREPBiasIRRetrieval(AbsTaskRetrieval):
         annotations_creators="human-annotated",
         dialect=None,
         sample_creation="found",
-        bibtex_citation=None,
+        bibtex_citation=r"""
+@inproceedings{Kopeinik2023Show,
+  author = {Kopeinik, Simone and Mara, Martina and Ratz, Linda and Krieg, Klara and Schedl, Markus and Rekabsaz, Navid},
+  booktitle = {Proceeding of the ACM Conference on Human Factors in Computing Systems (CHI),},
+  title = {Show me a "Male Nurse"! How Gender Bias is Reflected in the Query Formulation of Search Engine Users},
+  year = {2023},
+}
+""",
         prompt={
             "query": "Given a question, retrieve relevant documents that best answer the question"
         },
